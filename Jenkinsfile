@@ -11,6 +11,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'This is checkout stage'
+                git branch: 'main', url: 'https://github.com/PAVANKUMAR4/DevOps.git'
+                echo 'Checkout Completed'
             }
         }
 
