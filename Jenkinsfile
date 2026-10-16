@@ -17,14 +17,21 @@ pipeline {
         // Build ID stage
         stage('Build ID') {
             steps {
-                echo "This Build JOB ID is ${env.BUILD_ID}"
+                echo "This Build ID is ${env.BUILD_ID}"
             }
         }
 
         // Build Number stage
         stage('Build Number') {
             steps {
-                echo "This Build JOB Number is ${env.BUILD_NUMBER}"
+                echo "This Build Number is ${env.BUILD_NUMBER}"
+            }
+        }
+
+        // Build Number stage
+        stage('JOB Name') {
+            steps {
+                echo "This is JOB Name is ${env.JOB_NAME}"
             }
         }
 
