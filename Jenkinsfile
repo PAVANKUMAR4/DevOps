@@ -22,13 +22,6 @@ pipeline {
         }
 
         // Build Number stage
-        stage('Build Number') {
-            steps {
-                echo "This Build Number is ${env.BUILD_NUMBER}"
-            }
-        }
-
-        // Build Number stage
         stage('JOB Name') {
             steps {
                 echo "This is JOB Name is ${env.JOB_NAME}"
