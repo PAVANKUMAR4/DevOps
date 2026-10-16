@@ -15,9 +15,9 @@ pipeline {
         }
 
         // Build stage
-        stage('Build') {
+        stage('Build ID') {
             steps {
-                echo 'This is build stage'
+                echo 'This ID is ${BUILD_ID}'
             }
         }
 
