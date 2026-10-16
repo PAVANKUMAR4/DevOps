@@ -1,9 +1,7 @@
 pipeline {
 
     // Define the agent for the pipeline
-    agent {
-        label 'pavan'
-    }
+    agent any
 
     stages {
 
