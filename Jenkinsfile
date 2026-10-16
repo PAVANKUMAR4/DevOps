@@ -14,13 +14,6 @@ pipeline {
             }
         }
 
-        // Build ID stage
-        stage('Build ID') {
-            steps {
-                echo "This Build ID is ${env.BUILD_ID}"
-            }
-        }
-
         // Build Number stage
         stage('JOB Name') {
             steps {
